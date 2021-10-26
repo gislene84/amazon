@@ -1,0 +1,90 @@
+*{
+    margin: 0;/*espaçamento na largura do lado de fora do elementos*/
+    padding: 0;/*espaçamento na altura do lado de dentro dos elementos*/
+    box-sizing: border-box;/*os valores do padding não vai influenciar no tamanho do elemneto*/
+    font-family: arial;/*fonte*/
+}
+body{
+    background-color: rgb(20,20,20);/*cor de fundo*/
+}
+header{
+    padding: 8px 0;/*preenchimento na altura, 8 cima/baixo 0 direita/esquerda*/
+    background-color: rgb(40,40,40);/*cor de fundo*/
+}
+.center{
+    max-width: 1280px;/*largura máxima do elemento*/
+    margin: 0 auto;/*margem cima/baixo de 0, auto centraliza a margem*/
+    padding: 0 2%;/*preenchimento na altura, 0 cima/baixo 2% direita/esquerda*/
+    display: flex;/*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    flex-wrap: wrap;/*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
+
+}
+.logo{
+    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+    vertical-align: middle;/*alinha textos verticalmente que estejam dentro de uma célula de tabela ou uma linha*/
+}
+.logo img{
+    max-width: 120px;/*largura máxima do elemento*/
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+}
+.menu{
+    display: flex;/*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens.*/
+    width: 40%;/*determina a largura da área de conteúdo de um elemento*/
+}
+.menu-items{
+    margin-top: 10px;
+    padding: 0 20px;/*preenchimento na altura, 0 cima/baixo 20 direita/esquerda*/
+    display: inline-block;/*faz com que o elemento HTML seja renderizado inline, dentro do bloco na mesma linha.*/
+}
+.menu-items a{
+    color: rgb(120,120,120);/*cor de fundo*/
+    margin-right: 10px;/*define a área da margem no lado direito de um elemento*/
+    text-decoration: none;/*retira o traço debaixo da palavra do menu*/
+}
+.menu-items a:hover{/*quando o mouse encosta na palavra, ela vai mudar de cor*/
+    color: white;/*cor da fonte*/
+}
+.search{
+    width: 60%;/*determina a largura da área de conteúdo de um elemento*/
+    text-align: right;/*O elemento flutua à direita de seu contêiner*/
+}
+.input-search{
+    position: relative;/*posiciona o elemento em relação a si mesmo.*/
+    width: 200px;
+    display: inline-block;
+}
+.input-search i{
+    left: 4px;
+    top: 15px;
+    color: rgb(100,100,100);/*cor da fonte*/
+}
+.input-search input[type=text]{
+    width: 100%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 30px;/*determina a altura do elemento*/
+    border: 1px solid rgb(120,120,120);/*tamanho, forma e cor da borda*/
+    margin: 9px 0;/*margem cima/baixo de 9, 0 direita/esquerda*/
+    padding-left: 30px;/*preenchimento na altura a esquerda*/
+    background-color: rgb(40,40,40);/*cor de fundo*/
+    color: white;/*cor da fonte*/
+}
+.banner-principal{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.main h2{
+    color: white;
+    width: 100%;
+    margin: 30px 0;
+}
+.card-movie{
+    width: 20%;
+}
+.card-movie img{
+   width: 100%; 
+   transition: 1s;
+}
+.card-movie img:hover{
+    transform: scale(1.1,1.1);
+}
